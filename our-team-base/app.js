@@ -36,6 +36,11 @@ const team = [
 // ciclo for per ciclare elemnti array
 for (let i=0;i<team.length;i++){
    console.log(team[i])
+   // creazioni variabili per contenere i dati ciclati
+   let nome = team[i].name;
+   let ruolo =team[i].role;
+   let foto = team[i].image; 
+   console.log(nome,ruolo,foto)
 }
   
   
