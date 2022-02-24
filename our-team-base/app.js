@@ -31,7 +31,8 @@ const team = [
        image: "barbara-ramos-graphic-designer.jpg",
     }
   ];
-
+// richiamo elemento html
+const elementHtml = document.querySelector('.team-container');
 
 // ciclo for per ciclare elemnti array
 for (let i=0;i<team.length;i++){
@@ -47,7 +48,7 @@ for (let i=0;i<team.length;i++){
    <div class="team-card">
       <div class="card-image">
          <img
-         src="${foto}"
+         src="img/${foto}"
          alt="${nome}"
          />
       </div>
@@ -56,9 +57,12 @@ for (let i=0;i<team.length;i++){
          <p>${ruolo}</p>
       </div>
    </div>`
-   console.log(card)
+   // console.log(card)
+
+   // inserimento card
+   elementHtml.innerHTML += card
 }
-  
+ 
   
 
 
